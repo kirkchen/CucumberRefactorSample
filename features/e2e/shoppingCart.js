@@ -21,6 +21,6 @@ module.exports = function () {
     });
 
     this.Then(/^the total price should be "([^"]*)"$/, function (totalPrice) {
-        this.totalPrice.should.be.equal(+totalPrice);
+        (+totalPrice).should.be.equal(this.totalPrice);
     });
 }
