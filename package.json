@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "A sample for demostrate how cucumber.js can help us with refactor",
   "scripts": {
+    "test": "cucumber.js --compiler ts:ts-node/register",
     "start": "node src/app.js"
   },
   "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cucumber": "^1.3.1",
+    "ts-node": "^1.4.1",
+    "typescript": "^2.0.3"
+  }
 }
