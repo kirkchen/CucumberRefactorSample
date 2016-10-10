@@ -1,7 +1,7 @@
 var chai = require('chai');
 chai.should();
 
-var shoppingCart = require('../../src/shoppingCart');
+var shoppingCart = require('../../src/shoppingCart').default;
 
 module.exports = function () {        
     this.Given(/^the member level is "([^"]*)"$/, function (memberLevel) {
@@ -17,7 +17,7 @@ module.exports = function () {
     });
 
     this.When(/^calculate shoppingCart's price$/, function () {
-        this.totalPrice = shoppingCart(this.memberLevel, this.price, this.qty);
+        this.totalPrice = shoppingCart.Calculate(this.memberLevel, this.price, this.qty);
     });
 
     this.Then(/^the total price should be "([^"]*)"$/, function (totalPrice) {

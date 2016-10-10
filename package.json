@@ -4,7 +4,7 @@
   "description": "A sample for demostrate how cucumber.js can help us with refactor",
   "scripts": {    
     "test": "istanbul cover cucumber.js -- --compiler ts:ts-node/register",
-    "start": "node src/app.js"
+    "start": "ts-node src/app.ts"
   },
   "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
   "license": "MIT",
