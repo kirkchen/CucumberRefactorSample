@@ -1,0 +1,10 @@
+{
+  "name": "cucumber_refactor",
+  "version": "1.0.0",
+  "description": "A sample for demostrate how cucumber.js can help us with refactor",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
+  "license": "MIT"
+}
