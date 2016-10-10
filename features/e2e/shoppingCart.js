@@ -1,7 +1,7 @@
 var chai = require('chai');
 chai.should();
 
-var shoppingCart = require('../../src/shoppingCart').default;
+var shoppingCart = require('../../src/shoppingCarts/shoppingCart').default;
 
 module.exports = function () {        
     this.Given(/^the member level is "([^"]*)"$/, function (memberLevel) {
